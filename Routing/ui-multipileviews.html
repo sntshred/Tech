@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+    <script src="ui-multipileviews.js">
+    </script>
+</head>
+
+<body ng-app="myapp">
+    <div class="row">
+        <div class="col-sm-12  well"> Heading | <a ui-sref="root()">Main </a> </div>
+
+    </div>
+    <div class="row" style="height:100%">
+
+        <div class="col-sm-3 well" style="height:100%">
+            <ul>
+                <li>
+                    <a ui-sref="firstmessage()">Go to First </a>
+
+                </li>
+                <li>
+                    <a ui-sref="firstmessage1()">Go to Second </a>
+
+                </li>
+                <li>
+                    <a ui-sref="Employees()">Employees</a>
+
+                </li>
+             
+            </ul>
+        </div>
+        <div class="col-sm-9 well" style="height:100%">
+
+            <div ui-view></div>
+            <div ui-view='multiview'></div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div ui-view="emp-header"></div>
+
+
+                </div>
+                <div class="col-sm-12">
+                    <div ui-view="emp-list"></div>
+
+
+                </div>
+                  <div class="col-sm-12">
+                    <div ui-view="emp-details"></div>
+
+
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 well"> Footer</div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="angular.js">    </script>
+    <script src="watcher.js">    </script>
+
+</head>
+
+<body ng-app="myapp">
+    <hr>
+   
+<hr>
+<p>Two Bingding </p>
+    <div ng-controller="twoBinding" clas="col-md-4">
+        <!--<input type="text" ng-model="a" ng-change="updatec()">-->
+<!--
+        <input type="text" ng-model="a">
+        <br>
+      <!--{{a}}-->
+         <!--<br>-->
+        <!--<input type="text" ng-model="b">-->
+     
+         <!--b={{b}}-->
+         <!--<br>-->
+         <!--c={{c}}
+        {{b}}-->
+
+
+<!--watchcollection-->
+ <!--<input type="text" ng-model="o.a">
+        <br>
+      <!--{{a}}-->
+         <!--<br>-->
+        <!--<input type="text" ng-model="o.b">-->
+     
+         <!--b={{b}}-->
+         <!--<br>-->
+         <!--c={{o.c}}-->
+        <!--{{b}}-->
+
+<!--Array collections-->
+<div ng-repeat="x in emps">
+       empname: {{x.empname}}     
+</div>
+<button ng-click="addEmp()" >Add Employee </button>
+
+<button ng-click="modify()" >Edit Employee </button>
+
+        </div>
+ 
+<hr>
+
+<hr>
+</div>
+</body>
+
+</html>

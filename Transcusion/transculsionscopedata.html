@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="angular.js">  </script>
+      <script src="transculsionscopedata.js">  </script>
+                    
+</head>
+
+<body ng-app="myapp">
+
+
+
+<div ng-controller="mycontroller">
+<!--This is controller
+x={{a.x}}, y= {{b.y}} 
+<br>
+    <div message>
+        this  is trascluded
+<br>
+     x={{a.x}}, y= {{b.y}} </div>
+<hr>-->
+<!--
+This is inherited scope
+x={{a.x}}, y= {{b.y}} 
+<br>
+    <div message>
+        this  is trascluded
+<br>
+     x={{a.x}}, y= {{b.y}} </div>
+<hr>-->
+
+
+
+This is Isolated scope
+x={{a.x}}, y= {{b.y}} 
+<br>
+    <div message3>
+        this  is trascluded
+<br>
+     x={{a.x}}, y= {{b.y}} </div>
+<hr>
+
+</div>
+
+
+</body>
+
+</html>

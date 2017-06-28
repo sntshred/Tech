@@ -1,0 +1,18 @@
+<div>
+    <div ng-show="result">
+<div>
+<a ui-sref="firstmessage" >Backa </a> |
+ <button ng-click="goback()" >Back </button>
+
+</div>
+<div ng-show="loading==true">
+    <span style="color: red">Loding please wait</span>
+</div ng-hide="loading==true">
+    Calculted Result  = {{result}}
+    </div>
+</div>
+<div ng-show="isresolvingSate==true">
+    <span style="color: red">Loding please wait</span>
+</div ng-hide="isresolvingSate==true">
+    Calculted Result  = {{result}}
+    </div>

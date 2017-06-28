@@ -1,0 +1,204 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+    <script src="uirouterParams.js">
+    </script>
+
+</head>
+
+<body ng-app="myapp">
+    <div class="row">
+        <div class="col-sm-12  well"> Heading</div>
+    </div>
+    <div class="row" style="height:100%">
+
+        <div class="col-sm-3 well" style="height:100%">
+            <ul>
+                <li>
+                    <a href="#/first-msg/20/230">Go to First </a>
+
+                </li>
+                <li>
+                    <a href="#/second-msg/demo/230">Go to second </a>
+
+                </li>
+                <li>
+                    <a href="#/third-msg/">No parmas </a>
+
+                </li>
+                <li>
+                    <a href="#/third-msg/230">one parmas </a>
+
+                </li>
+                <li>
+                    <a href="#/third-msg/230/121">two parmas </a>
+
+                </li>
+                 <li>
+                    <a href="#/fourth-msg/230/121">Fourth parmas </a>
+
+                </li>
+                 <li>
+                    <a href="#/fifth-msg//">fifth-msg parmas </a>
+
+                </li>
+                  <li>
+                    <a href="#/fifth-msg/4/">fifth-msg one parmas </a>
+
+                </li>
+                  <li>
+                    <a href="#/sixth-msg/4">sixth-msg one parmas </a>
+
+                </li>
+                 <li>
+                    <a href="#/sixth-msg">sixth-msg parmas </a>
+
+                </li>
+                 <li>
+                    <a href="#/seventh-msg/-/4">sevent-msg one parmas </a>
+
+                </li>
+                 <li>
+                    <a href="#/seventh-msg/212/~">seventh-msg parmas </a>
+
+                </li>
+                 <li>
+                    <a href="#/eight-msg?a=90&b=911">eight-msg parmas </a>
+
+                </li>
+                   <li>
+                    <a href="#/eight-msg?a=90">eight-msg one parmas </a>
+
+                </li>
+                   <li>
+                    <a href="#/eight-msg">eight-msg no parmas </a>
+
+                </li>
+                  <li>
+                    <a href="#/ninth-msg?a=90">ninth-msg one parmas </a>
+
+                </li>
+                   <li>
+                    <a href="#/ninth-msg">ninth-msg no parmas </a>
+
+                </li>
+                  <li>
+                    <a href="#/ninth-msg?a=8&b=93&b=392&b=03">Array of ninth-msg  </a>
+
+                </li>
+            </ul>
+            <ul>
+                <li>
+
+                    <a ui-sref="firstmessage({a:32,b:90})">second to </a>
+
+                </li>
+                <li>
+                    <a ui-sref="secondmessage({a:1,b:2})">second to </a>
+
+                </li>
+
+                <li>
+                    <a ui-sref="thirdmessage(null)">No params </a>
+
+                </li>
+                 <li>
+                    <a ui-sref-opts="{inherit:false}" ui-sref="thirdmessage()">No params </a>
+
+                </li>
+                <li>
+                    <a ui-sref="thirdmessage({a:1})">one params </a>
+
+                </li>
+                <li>
+                    <a ui-sref="thirdmessage2({a:1,b:21})">two params </a>
+
+                </li>
+                  <li>
+                    <a ui-sref="fourthmessage({a:null,b:null})">fourth msg params -a null b null </a>
+
+                </li>
+  <li>
+                    <a ui-sref="fourthmessage({a:101,b:null})">fourth msg params -a b null </a>
+
+                </li>
+                  <li>
+                    <a ui-sref="fourthmessage({a:null,b:21})">fourth msg params -a null b  </a>
+
+                </li>
+                  <li>
+                    <a ui-sref="fourthmessage({a:101,b:21})">fourth msg params -a,  b  </a>
+
+                </li>
+                <li>
+                    <a ui-sref="fifthmessage({a:null,b:null})">fifth-msg params -a,  b  </a>
+
+                </li>
+                 <li>
+                    <a ui-sref="eighthmessage({a:211,b:44})">eigth-msg params -a,  b  </a>
+
+                </li>
+                   <li>
+                    <a ui-sref="eighthmessage({a:211,b:null})">eigth-msg one params -a,  b  </a>
+
+                </li>
+                   <li>
+                    <a ui-sref="eighthmessage({a:null,b:null})">eigth-msg no params -a,  b  </a>
+
+                </li>
+                 <li>
+                    <a ui-sref="ninthmessage({a:211,b:null})">ninth-msg one params -a,  b  </a>
+
+                </li>
+                   <li>
+                    <a ui-sref="ninthmessage({a:null,b:null})">ninth-msg no params -a,  b  </a>
+
+                </li>
+
+                 <li>
+                    <a ui-sref="ninthmessage({a:null,b:[1,32,2,32]})">Array of ninth-msg </a>
+
+                </li>
+            </ul>
+
+
+        </div>
+        <div class="col-sm-9 well" style="height:100%">
+
+            <div ui-view></div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 well"> Footer</div>
+
+    </div>
+
+
+
+
+    <a href="#/">Home </a><br>
+    <!--routing with the Url -->
+    <!--<a href="#/first-msg" >Go to </a> | <a href="#/second-msg" >second to </a> -->
+    <!--routing with the state name -->
+    |
+
+
+
+
+
+
+
+
+</body>
+
+</html>

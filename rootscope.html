@@ -1,0 +1,45 @@
+<html>
+
+<head>
+      <script src="angular.js">  </script>
+     <script>
+     var app = angular.module("myapp",[]);
+     app.run(["$rootScope",function($rootScope){
+         $rootScope.catogry="Human";
+     }]);
+     app.controller("mycontroller",["$scope","$rootScope",function($scope,$rootScope){
+         $scope.name="this is santosh--- "+$rootScope.catogry;
+
+
+     }]);
+      app.controller("Empdetialscontroller",["$scope","$rootScope",function($scope,$rootScope){
+            $scope.name="second---"+$rootScope.catogry;;
+            $scope.sal=2323;
+            $scope.dept="manger";
+
+     }])
+     </script>
+                
+</head>
+
+<body ng-app="myapp">
+
+
+
+<div ng-controller="mycontroller">
+    {{name}}
+
+    
+
+<div ng-controller="Empdetialscontroller">
+    <strong> {{name}}</strong> ------- {{sal}}, ------  {{dept}}
+</div>
+</div>
+<br>
+<br>
+
+
+
+</body>
+
+</html>

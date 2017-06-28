@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <script src="angular.js">
+
+    </script>
+    <script src="Binding.js">
+
+    </script>
+
+</head>
+
+<body ng-app="myapp">
+    <div ng-controller="onewayBinding">
+       Oneway1 = {{oneway1}} 
+       Oneway2 = {{oneway2}} 
+       <br>
+    
+    <br>
+       Oneway1 = <span ng-bind="oneway1"></span>
+       Oneway2 = <span ng-bind="oneway2"></span>
+    </div>
+    <hr>
+<p>One time Bingding </p>
+    <div ng-controller="onetimeBinding">
+      Oneway1 = {{oneway1}} 
+       Oneway2 = {{oneway2}} 
+       <br>
+    
+    <br>
+       Oneway1 = <span ng-bind="oneway1"></span>
+       Oneway2 = <span ng-bind="oneway2"></span>
+    
+<br>
+sum = {{TotalSum}}
+<br>
+
+<button ng-click="sum()"> Calculate</button>
+<br>
+The Intial vlaue of a : {{::oneway1}}
+<hr>
+<p>Two Bingding </p>
+    <div ng-controller="twoBinding">
+      Oneway1 = {{oneway1}}, To, edit <input typ="text" ng-model="oneway1"> <br>
+       Oneway2 = {{oneway2}} To, edit <input typ="text" ng-model="oneway2">
+       <br>
+    sum = {{TotalSum}}
+<br>
+
+<button ng-click="sum()"> Calculate</button>
+<br>
+
+</div>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <script src="angular.js">
+
+    </script>
+    <script src="ServiceService.js">
+
+    </script>
+
+</head>
+
+<body ng-app="myapp">
+<hr>
+<p>Two Bingding </p>
+    <div ng-controller="twoBinding">
+      Oneway1 = {{oneway1}}, To, edit <input typ="text" ng-model="oneway1"> <br>
+       Oneway2 = {{oneway2}} To, edit <input typ="text" ng-model="oneway2">
+       <br>
+    sum = {{TotalSum}}
+<br>
+
+<button ng-click="sum()"> Calculate</button>
+<br>
+
+</div>
+</body>
+
+</html>

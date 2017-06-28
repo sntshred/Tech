@@ -1,0 +1,70 @@
+
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+            <script src="angular.js">
+
+            </script>
+            <script src="isolatescopes.js">
+
+            </script>
+
+</head>
+
+<body ng-app="myapp">x
+    <hr>
+    <p>Two Bingding </p>
+    <div ng-controller="twoBinding" clas="col-md-4">
+        <!--<input type="text" ng-model="a"> -->
+        <br>a= {{a}}
+        <br> b= {{b}}
+        <br>c= {{c}}
+        <br> d= {{d}}
+        <hr>
+       <!--<button ng-click="changeB()">Change value B</button>-->
+      <hr>
+<!--
+
+   instance1:  <div message x="hello" y="jack" ></div>
+    instance2 : <div message x="{{d}}" y="{{c}}"></div>
+    <hr>
+    instance3 : <div message2 m="hello" n="parameter"></div>
+
+             <button ng-click="doprocess()">Click here</button>
+             <hr>
+           
+             <br>
+   objectscopingdirectivesinstance : <div message2 m="hello" n="parameter"></div>
+      -->
+  <!--controller: empname:{{employ.empname}}<br>
+  <input type="text" ng-model="employ.empname">
+  <br>-->
+    <!--objectisolatescoping : <div objectisolatescoping employee="employ"></div>
+ <br>   objectisolatescoping2 : <div objectisolatescoping employee="employ"></div>
+    <br>
+    <hr>
+ <br>-->
+  <!--oEmp = o-emp // "-"   will convert lower to uppercase-->
+  <!--objectisolatescoping2 : <div objectisolatescoping2 o-emp="employ2"></div>-->
+
+  <!-- Directive on methods (&)   -->
+
+a={{a}} , b={{b}} 
+  <br>
+  <button ng-click="dosum(a,b)"> CalcSum ></button>
+<hr>
+<!--<div methodisolatescoping emp-sum="dosum"></div>-->
+<!--Another way -->
+<div methodisolatescoping just-sum="dosum(m,n)"></div>
+
+
+    </div>
+  
+</body>
+
+</html>
